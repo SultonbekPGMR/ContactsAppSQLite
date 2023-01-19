@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffbf69"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ShowLisFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffbf69"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:layout_marginBottom="60dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:focusable="true" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ffbf69"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:endIconMode="clear_text"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:helperTextTextColor="#E53935"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:inputType="textPersonName"
+            android:paddingEnd="40dp"
+            android:layout_width="match_parent"
+            android:importantForAutofill="no"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Number"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="#E53935"
+        app:prefixText="+998"
+        app:startIconDrawable="@drawable/ic_baseline_local_phone_24">
+
+        <EditText
+            android:id="@+id/edt_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="9"
+            android:paddingEnd="40dp"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/coordinate_layout"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
